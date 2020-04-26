@@ -14,6 +14,8 @@ var rootCmd = &cobra.Command{
 }
 
 func Exec() {
+  rootCmd.AddCommand(cmdLS)
+  rootCmd.AddCommand(cmdDescribe)
   err := rootCmd.Execute()
   if err != nil {
     fmt.Println(err)
@@ -26,4 +28,21 @@ type News struct {
   Title string
   Text string
   Author string
+}
+
+var cmdLS = &cobra.Command{
+  Use: "ls".,
+  Short: "List news",
+  Long: `List first 5 news`,
+  Run: func(cmd *cobra.Command, args []string) {list()
+  },
+}
+
+var cmdDescribe = &cobra.Command{
+  Use: "describe [id]",
+  Short: "Show details for an article",
+  Long: `Details for an artice`,
+  Args: cobra.MinimumNArgs(1),
+  Run: func(cmd *cobra.Command, args []string) { describe(args[0])
+  },
 }
