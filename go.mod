@@ -1,4 +1,4 @@
-module github.com/v-c-b/netwsticker_go.git
+module github.com/v-c-b/netwsticker_go
 
 go 1.14
 
