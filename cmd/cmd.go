@@ -3,7 +3,6 @@ import (
   "fmt"
   "github.com/spf13/cobra"
   "os"
-  "strings"
 )
 
 var rootCmd = &cobra.Command{
