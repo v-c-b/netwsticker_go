@@ -9,7 +9,8 @@ import (
 var rootCmd = &cobra.Command{
   Use: "newsticker_go",
   Short: "Read Atom feeds",
-  Long: "Just a small CLI application. Read Atom feeds"
+  Long: `Just a small CLI application.
+  Read Atom feeds`
 }
 
 func Exec() {
