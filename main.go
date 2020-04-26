@@ -3,5 +3,5 @@ import (
   "fmt"
 )
 func main() {
-  fmt.PrintIn("One line of text")
+  fmt.Println("One line of text")
 }
