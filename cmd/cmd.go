@@ -20,3 +20,10 @@ func Exec() {
     os.Exit(1)
   }
 }
+
+type News struct {
+  Id int
+  Title string
+  Text string
+  Author string
+}
