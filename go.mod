@@ -1,4 +1,4 @@
-module github.com/v-c-b/netwsticker_go.git
+module github.com/v-c-b/newsticker_go.git
 
 go 1.14
 
