@@ -31,10 +31,11 @@ type News struct {
 }
 
 var cmdLS = &cobra.Command{
-  Use: "ls".,
+  Use: "ls",
   Short: "List news",
   Long: `List first 5 news`,
-  Run: func(cmd *cobra.Command, args []string) {list()
+  Run: func(cmd *cobra.Command, args []string) {
+    list()
   },
 }
 
